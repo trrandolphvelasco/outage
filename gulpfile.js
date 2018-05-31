@@ -15,15 +15,6 @@ gulp.task('default', ['clean'], function(cb) {
   });
 });
 
-gulp.task('html', function() {
-  return gulp.src(paths.pug)
-  .pipe(pug({
-    doctype: 'html',
-    pretty: true
-  }))
-  .pipe(gulp.dest('./html'));
-});
-
 gulp.task('clean', function() {
   return gulp.src('./html', { read: false })
     .pipe(clean({force: true}));
