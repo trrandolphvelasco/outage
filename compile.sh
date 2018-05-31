@@ -34,21 +34,21 @@ for dir in "${folder[@]}"
 do
   # Reset the value of '- var project = $i' to a constant value "flag" when
   # 'Ctrl+c' is pressed.
-  trap "perl -i -pe 's/'$dir'/flag/g if $.==4' options/options.jade" exit
+  trap "perl -i -pe 's/'$dir'/flag/g if $.==4' options/options.pug" exit
 
   echo "Generating templates for '${bold}$dir'"
 
   # Replace the constant string value of '- var project = "flag"'
-  # in "options.jade" to
+  # in "options.pug" to
   # its folder name stored in the array object folder.
   # --
   # This will find only the intance of string "flag" exactly on the specified
   # line number.
-  perl -i -pe 's/flag/'$dir'/g if $.==4' options/options.jade
+  perl -i -pe 's/flag/'$dir'/g if $.==4' options/options.pug
 
-  # Compiles all .jade files to .html and place it in the project folder.
-  jade --pretty *.jade --out html/$dir
+  # Compiles all .pug files to .html and place it in the project folder.
+  pug --pretty *.pug --out html/$dir
 
   # Reset the value of '- var project = $i' to a constant string value "flag".
-  perl -i -pe 's/'$dir'/flag/g if $.==4' options/options.jade
+  perl -i -pe 's/'$dir'/flag/g if $.==4' options/options.pug
 done
