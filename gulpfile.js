@@ -8,7 +8,7 @@ var paths = {
 }
 
 gulp.task('default', ['clean'], function(cb) {
-  exec('bash compile.sh', function(err,stdout,stderr) {
+  exec('mkdir html; bash compile.sh', function(err,stdout,stderr) {
     console.log(stdout);
     console.log(stderr);
     cb(err);
