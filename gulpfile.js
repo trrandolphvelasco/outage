@@ -7,8 +7,8 @@ var paths = {
   pug: ['includes/**/*.pug', 'assets/vendor/**/*.pug', 'layout/**/*.pug', 'partials/**/*.pug', './*.pug', '!**/_*.pug', '!node_modules/**/*']
 }
 
-gulp.task('default', ['clean'], function(cb) {
-  exec('mkdir html; bash compile.sh', function(err,stdout,stderr) {
+gulp.task('default', function(cb) {
+  exec('bash compile.sh', function(err,stdout,stderr) {
     console.log(stdout);
     console.log(stderr);
     cb(err);
