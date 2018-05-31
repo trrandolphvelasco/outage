@@ -1,0 +1,120 @@
+extends ./layout/layout.jade
+
+block content
+  
+  table(cellpadding='0', cellspacing='0', width='100%', border='0')
+    tr
+      td(align='center', style='font-family:Arial, Helvetica, sans-serif; color: #049900; font-size: 14px; padding-top: 14px;')
+        span(contenteditable='true', style='display:block;') ToolTwist QA
+      //- td
+    //- tr
+    tr
+      td(align='center', style='font-family:Arial, Helvetica, sans-serif; color: #049900; font-size: 18px; padding-top: 12px;')
+        span(contenteditable='true', style='display:block; padding: 0 20px;') Smoke Test in [test environment]
+      //- td
+    //- tr
+    tr
+      td(align='center', valign='middle', style='padding: 10px 0;')
+        //- render logo
+        if xlogo
+          +logo(url)
+          +logo(url2)
+        else
+          +logo(url)
+        //- render logo
+      //- td
+    //- tr
+    tr
+      td(height='2')
+        div(style='margin: 0 2px; background:#e2e2e2; height: 1px;')
+        div(style='margin: 0 2px; background:#FFFFFF; height: 1px;')
+      //- td
+    //- tr
+    tr
+      td(style='padding: 15px 20px; color:#3e3d3d; font-family:Arial, Helvetica, sans-serif; font-size: 12px;')
+        table(width='100%', cellpadding='5', cellspacing='0', border='0')
+          tr
+            td(width='150', valign='top')
+              strong Project Name
+            //- td
+            td(width='35', align='left', valign='top')
+              | :
+            //- td
+            td(width='', valign='top')
+              span(contenteditable='true', style='display:block;')
+                | ...
+              //- span
+            //- td
+          //- tr
+          tr
+            td(valign='top')
+              strong Build Version No. &amp; Date
+            //- td
+            td(align='left', valign='top')
+              | :
+            //- td
+            td(valign='top')
+              span(contenteditable='true', style='display:block;')
+                | ...
+              //- span
+            //- td
+          //- tr
+          tr
+            td(valign='top')
+              strong Test Environment
+            //- td
+            td(align='left', valign='top')
+              | :
+            //- td
+            td(valign='top')
+              span(contenteditable='true', style='display:block;')
+                | ...
+              //- span
+            //- td
+          //- tr
+          tr
+            td(valign='top')
+              strong Duration
+            //- td
+            td(align='left', valign='top')
+              | :
+            //- td
+            td(valign='top')
+              span(contenteditable='true', style='display:block;')
+                | ...
+              //- span
+            //- td
+          //- tr
+          tr
+            td(valign='top')
+              strong Contact
+            //- td
+            td(align='left', valign='top')
+              | :
+            //- td
+            td(valign='top')
+              span(contenteditable='true', style='display:block;')
+                | ...
+              //- span
+            //- td
+          //- tr
+          tr
+            td(height='10', colspan='3')
+          //- tr
+          tr
+            td(valign='top')
+              strong Test Results
+            //- td
+            td(align='left', valign='top')
+              | :
+            //- td
+            td(valign='top')
+              span(contenteditable='true', style='display:block;')
+                | ...
+              //- span
+            //- td
+          //- tr
+        //- table
+      //- td
+    //- tr
+  //- table
