@@ -1,4 +1,4 @@
 netlify:
-	npm install pug -g
+	npm install pug
 	gulp clean
 	bash ./compile.sh
