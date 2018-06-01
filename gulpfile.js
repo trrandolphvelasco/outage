@@ -13,7 +13,7 @@ gulp.task('default',['clean'], function(cb) {
   if (!fs.existsSync(dir)){
     fs.mkdirSync(dir);
   }
-  exec('bash compile.sh', function(err,stdout,stderr) {
+  exec('./compile.sh', function(err,stdout,stderr) {
     console.log(stdout);
     console.log(stderr);
     cb(err);
