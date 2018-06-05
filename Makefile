@@ -1,3 +1,3 @@
 netlify:
-	curl -sf https://www.getlektor.com/install.sh | sh
+	npm install -g pug
 	./compile.sh
