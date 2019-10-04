@@ -27,7 +27,7 @@
 # ---------------------------
 
 # Array of folder names.
-folder=(af bc cl dp fe fmc gs hr mhp ms nu pd pi rp tq wc hp ge am wmu ins mb cx td piq adv adlf lp)
+folder=(af bc cl dp fe fmc gs hr mhp ms nu pd pi rp tq wc hp ge am wmu ins mb cx td piq adv adlf aldi)
 bold=$(tput bold) # Ignore this. I just want to see the folder name in bold.
 
 for dir in "${folder[@]}"
