@@ -24,10 +24,13 @@
 #   mb  - My Bonsai Diary
 #   cx  - ConvX
 #   td  - TechDirect
+#   adlf - ADL Forms
+#   adli - ADL Inspect
+#   lmdc - Love My Dog Club
 # ---------------------------
 
 # Array of folder names.
-folder=(af bc cl dp fe fmc gs hr mhp ms nu pd pi rp tq wc hp ge am wmu ins mb cx td piq adv adlf adli)
+folder=(af bc cl dp fe fmc gs hr mhp ms nu pd pi rp tq wc hp ge am wmu ins mb cx td piq adv adlf adli lmdc)
 bold=$(tput bold) # Ignore this. I just want to see the folder name in bold.
 
 for dir in "${folder[@]}"
