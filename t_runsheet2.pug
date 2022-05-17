@@ -10,7 +10,7 @@ block content
     //- tr
     tr
       td(align='center', style='font-family:Arial, Helvetica, sans-serif; color: #049900; font-size: 18px; padding-top: 12px;')
-        span(contenteditable='true', style='display:block; padding: 0 20px;') Release Run Sheet
+        span(contenteditable='true', style='display:block; padding: 0 20px;') #{name} v[version] Build [build] [ENV] Release Run Sheet
       //- td
     //- tr
     tr
@@ -35,7 +35,7 @@ block content
         table(width='100%', cellpadding='5', cellspacing='0', border='0')
           tr
             td(width='150', valign='top')
-              strong Date &amp; Time
+              strong Deployment Date
             //- td
             td(width='35', align='left', valign='top')
               | :
@@ -48,7 +48,7 @@ block content
           //- tr
           tr
             td(valign='top')
-              strong Product
+              strong Deployment Time
             //- td
             td(align='left', valign='top')
               | :
@@ -56,39 +56,6 @@ block content
             td(valign='top')
               span(contenteditable='true', style='display:block;')
                 | --
-              //- span
-            //- td
-          //- tr
-          tr
-            td(valign='top')
-              strong JIRA/Redmine Numbers
-            //- td
-            td(align='left', valign='top')
-              | :
-            //- td
-            td(valign='top')
-              span(contenteditable='true', style='display:block;')
-                | --
-              //- span
-            //- td
-          //- tr
-          tr
-            td(valign='top')
-              strong Image
-            //- td
-            td(align='left', valign='top')
-              | :
-            //- td
-            td(valign='top')
-              span(contenteditable='true', style='display:block;')
-                | --
-              //- span
-            //- td
-          //- tr
-          tr
-            td(valign='top', colspan='3')
-              span(contenteditable='true', style='display:block; color: red;')
-                | Note:  This run sheet is a rough guidance only. Infrastructure and DBA teams are to read and vet the runsheet and feedback depending on target environments and release approvals.
               //- span
             //- td
           //- tr
