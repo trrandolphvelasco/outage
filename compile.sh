@@ -35,10 +35,11 @@
 #   ahc - Agile Help Center
 #   et - EmpowerTeams
 #   or - Oreana
+#   ux - UBX Xpanse
 # ---------------------------
 
 # Array of folder names.
-folder=(af bc cl dp fe fmc gs hr mhp ms nu pd pi rp tq wc hp ge am wmu ins mb cx td piq adv adlf adli lmdc pwb rr ys oa tgx ahc et or)
+folder=(af bc cl dp fe fmc gs hr mhp ms nu pd pi rp tq wc hp ge am wmu ins mb cx td piq adv adlf adli lmdc pwb rr ys oa tgx ahc et or ux)
 bold=$(tput bold) # Ignore this. I just want to see the folder name in bold.
 
 for dir in "${folder[@]}"
