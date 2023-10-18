@@ -43,6 +43,7 @@
     ux - UBX Xpanse
     pvt - Pivot
     ee - EasyEmployer
+    ttcm - TwistCases
 //-----------------------------
 
 if project == "af"
@@ -294,6 +295,12 @@ if project == "ee"
   - var width   = "390"
   - var height  = "48"
   - var inverse = false
+  if project == "ttcm"
+    - var name    = "TwistCases"
+    - var url     = "https://s3.ap-southeast-2.amazonaws.com/assets.twistresource.com/twistcases.png"
+    - var width   = "300"
+    - var height  = "93"
+    - var inverse = false
 
 - var attr = {"width": width, "height": height, "valign": "middle"};
 
